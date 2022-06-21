@@ -128,7 +128,8 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## [1] 6.026948</span><br></pre></td></tr></table></figure>
 
-<h3 id="사분위수-전체-수를-4등분한-수"><a href="#사분위수-전체-수를-4등분한-수" class="headerlink" title="사분위수 (전체 수를 4등분한 수)"></a>사분위수 (전체 수를 4등분한 수)</h3><h3 id="IQR-1사분위수와-3사분위수-사이의-거리-gt-이상치-제거할-때-활용"><a href="#IQR-1사분위수와-3사분위수-사이의-거리-gt-이상치-제거할-때-활용" class="headerlink" title="IQR: 1사분위수와 3사분위수 사이의 거리 -&gt; 이상치 제거할 때 활용"></a>IQR: 1사분위수와 3사분위수 사이의 거리 -&gt; 이상치 제거할 때 활용</h3><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">quantile<span class="punctuation">(</span>mtcars<span class="operator">$</span>mpg<span class="punctuation">)</span>  <span class="comment"># 사분위수 함수, 파이선에도 있음</span></span><br></pre></td></tr></table></figure>
+<h3 id="사분위수-전체-수를-4등분한-수"><a href="#사분위수-전체-수를-4등분한-수" class="headerlink" title="사분위수 (전체 수를 4등분한 수)"></a>사분위수 (전체 수를 4등분한 수)</h3><p><strong>IQR: 1사분위수와 3사분위수 사이의 거리 -&gt; 이상치 제거할 때 활용</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">quantile<span class="punctuation">(</span>mtcars<span class="operator">$</span>mpg<span class="punctuation">)</span>  <span class="comment"># 사분위수 함수, 파이선에도 있음</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">##     0%    25%    50%    75%   100% </span><br><span class="line">## 10.400 15.425 19.200 22.800 33.900</span><br></pre></td></tr></table></figure>
 
