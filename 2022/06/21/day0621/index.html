@@ -6,15 +6,15 @@
   
   <title>21JUN2022_ R 기초문법 통계 | kimanuul&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="데이터 불러오기-경로 설정이 매우 중요 1getwd()  1## [1] &quot;C:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;source&quot;   setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory  cs">
+  <meta name="description" content="데이터 불러오기경로 설정이 매우 중요 1getwd()  1## [1] &quot;C:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;source&quot;   setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory csv파">
 <meta property="og:type" content="article">
 <meta property="og:title" content="21JUN2022_ R 기초문법 통계">
 <meta property="og:url" content="https://kimanuul.github.io/2022/06/21/day0621/index.html">
 <meta property="og:site_name" content="kimanuul&#39;s blog">
-<meta property="og:description" content="데이터 불러오기-경로 설정이 매우 중요 1getwd()  1## [1] &quot;C:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;source&quot;   setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory  cs">
+<meta property="og:description" content="데이터 불러오기경로 설정이 매우 중요 1getwd()  1## [1] &quot;C:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;source&quot;   setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory csv파">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-06-21T00:00:00.000Z">
-<meta property="article:modified_time" content="2022-06-21T04:48:43.482Z">
+<meta property="article:modified_time" content="2022-06-21T04:50:31.145Z">
 <meta property="article:author" content="HANWOOL KIM">
 <meta name="twitter:card" content="summary">
   
@@ -99,22 +99,17 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="데이터-불러오기"><a href="#데이터-불러오기" class="headerlink" title="데이터 불러오기"></a>데이터 불러오기</h3><p>-경로 설정이 매우 중요</p>
+        <h3 id="데이터-불러오기"><a href="#데이터-불러오기" class="headerlink" title="데이터 불러오기"></a>데이터 불러오기</h3><p><strong>경로 설정이 매우 중요</strong></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getwd<span class="punctuation">(</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## [1] &quot;C:/Users/human/Desktop/R_lecture/source&quot;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><p>setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory</p>
-</li>
-<li><p>csv파일 &#x2F; 엑셀파일</p>
-</li>
-<li><p>여기까지가 어제 배운 내용</p>
-</li>
-<li><p><strong>91p mpg1.csv</strong></p>
-</li>
+<li>setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory</li>
+<li>csv파일 &#x2F; 엑셀파일</li>
+<li>여기까지가 어제 배운 내용</li>
 </ul>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mpg1 <span class="operator">&lt;-</span> read.csv<span class="punctuation">(</span><span class="string">&quot;data/mpg1.csv&quot;</span><span class="punctuation">,</span> stringsAsFactors <span class="operator">=</span> <span class="built_in">F</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<h2 id="91p-mpg1-csv"><a href="#91p-mpg1-csv" class="headerlink" title="91p mpg1.csv"></a>91p mpg1.csv</h2><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mpg1 <span class="operator">&lt;-</span> read.csv<span class="punctuation">(</span><span class="string">&quot;data/mpg1.csv&quot;</span><span class="punctuation">,</span> stringsAsFactors <span class="operator">=</span> <span class="built_in">F</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
 
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str<span class="punctuation">(</span>mpg1<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
