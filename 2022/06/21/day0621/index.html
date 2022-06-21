@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>day-3 | kimanuul&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="데이터 불러오기경로 설정이 매우 중요getwd()#setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory#csv파일 &#x2F; 엑셀파일 여기까지가 어제 배운 내용#91p mpg1.csv mpg1 &lt;- read.csv(“mp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="day-3">
+<meta property="og:url" content="https://kimanuul.github.io/2022/06/21/day0621/index.html">
+<meta property="og:site_name" content="kimanuul&#39;s blog">
+<meta property="og:description" content="데이터 불러오기경로 설정이 매우 중요getwd()#setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory#csv파일 &#x2F; 엑셀파일 여기까지가 어제 배운 내용#91p mpg1.csv mpg1 &lt;- read.csv(“mp">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-06-21T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-21T02:53:50.576Z">
+<meta property="article:author" content="HANWOOL KIM">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="kimanuul's blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">kimanuul&#39;s blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">첫 연습인데 어렵네여</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://kimanuul.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-day0621" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/06/21/day0621/" class="article-date">
+  <time class="dt-published" datetime="2022-06-21T00:00:00.000Z" itemprop="datePublished">2022-06-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      day-3
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="데이터-불러오기"><a href="#데이터-불러오기" class="headerlink" title="데이터 불러오기"></a>데이터 불러오기</h1><h1 id="경로-설정이-매우-중요"><a href="#경로-설정이-매우-중요" class="headerlink" title="경로 설정이 매우 중요"></a>경로 설정이 매우 중요</h1><p>getwd()<br>#setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory<br>#csv파일 &#x2F; 엑셀파일</p>
+<h1 id="여기까지가-어제-배운-내용"><a href="#여기까지가-어제-배운-내용" class="headerlink" title="여기까지가 어제 배운 내용"></a>여기까지가 어제 배운 내용</h1><p>#91p mpg1.csv</p>
+<p>mpg1 &lt;- read.csv(“mpg1.csv”, stringsAsFactors &#x3D; F) #데이터 범주 설정<br>str(mpg1)</p>
+<h1 id="평균"><a href="#평균" class="headerlink" title="평균"></a>평균</h1><p>mean(mtcars$mpg) # 평균<br>var(mtcars$mpg) # 분산<br>sd(mtcars$mpg) # 표준편차</p>
+<h1 id="사분위수-전체-수를-4등분한-수"><a href="#사분위수-전체-수를-4등분한-수" class="headerlink" title="사분위수 (전체 수를 4등분한 수)"></a>사분위수 (전체 수를 4등분한 수)</h1><h1 id="IQR-1사분위수와-3사분위수-사이의-거리-gt-이상치-제거할-때-활용"><a href="#IQR-1사분위수와-3사분위수-사이의-거리-gt-이상치-제거할-때-활용" class="headerlink" title="IQR: 1사분위수와 3사분위수 사이의 거리 -&gt; 이상치 제거할 때 활용"></a>IQR: 1사분위수와 3사분위수 사이의 거리 -&gt; 이상치 제거할 때 활용</h1><p>quantile(mtcars$mpg)  # 사분위수 함수, 파이선에도 있음</p>
+<h1 id="통계-요약-구하기"><a href="#통계-요약-구하기" class="headerlink" title="통계 요약 구하기"></a>통계 요약 구하기</h1><p>summary(iris$Sepal.Length)</p>
+<h1 id="빈도-분석"><a href="#빈도-분석" class="headerlink" title="빈도 분석"></a>빈도 분석</h1><h1 id="범주별-빈도-gt-문자"><a href="#범주별-빈도-gt-문자" class="headerlink" title="범주별 빈도 -&gt; 문자"></a>범주별 빈도 -&gt; 문자</h1><p>str(mpg1)</p>
+<p>table(mpg1$trans)  # 빈도분석 함수<br>table(mpg1$manufacturer)</p>
+<p>table(mpg1$trans, mpg1$manufacturer)</p>
+<h1 id="빈도의-비율-구하기"><a href="#빈도의-비율-구하기" class="headerlink" title="빈도의 비율 구하기"></a>빈도의 비율 구하기</h1><p>a &lt;- table(mpg1$trans)<br>prop.table(a) # prop -&gt; 비율 proportion 함수</p>
+<p>b &lt;- table(mpg1$trans, mpg1$drv)<br>prop.table(b)</p>
+<p>prop.table(table(mpg1$manufacturer))</p>
+<h1 id="행과-열의-비율-형식-맞추기-교재-93p"><a href="#행과-열의-비율-형식-맞추기-교재-93p" class="headerlink" title="행과 열의 비율 형식 맞추기(교재 93p)"></a>행과 열의 비율 형식 맞추기(교재 93p)</h1><p>prop.table(b, margin &#x3D; 1) #행의 합이 1이 되도록 비율 표시<br>prop.table(b, margin &#x3D; 2) #열의 합이 1이 되도록 비율 표시</p>
+<h1 id="소수점-아래-자리수-지정"><a href="#소수점-아래-자리수-지정" class="headerlink" title="소수점 아래 자리수 지정"></a>소수점 아래 자리수 지정</h1><p>round(0.32123141, 2) #반올림하여 소수점 두번째 자리까지만 표시</p>
+<p>round(prop.table(table(mpg1$trans)), 2)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kimanuul.github.io/2022/06/21/day0621/" data-id="cl4nkon180000ncvof3wg65yc" data-title="day-3" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/06/20/day0620/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">day0620</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/06/21/day0621/">day-3</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/20/day0620/">day0620</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/17/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/17/day0617/">Day-1 Visualization</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 HANWOOL KIM<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
