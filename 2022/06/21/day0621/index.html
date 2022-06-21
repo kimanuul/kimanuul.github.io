@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>day-3 | kimanuul&#39;s blog</title>
+  <title>R 기초문법 통계 | kimanuul&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="데이터 불러오기경로 설정이 매우 중요getwd()#setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory#csv파일 &#x2F; 엑셀파일 여기까지가 어제 배운 내용#91p mpg1.csv mpg1 &lt;- read.csv(“mp">
+  <meta name="description" content="데이터 불러오기-경로 설정이 매우 중요 1getwd()  1## [1] &quot;C:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;source&quot;  -setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory-csv">
 <meta property="og:type" content="article">
-<meta property="og:title" content="day-3">
+<meta property="og:title" content="R 기초문법 통계">
 <meta property="og:url" content="https://kimanuul.github.io/2022/06/21/day0621/index.html">
 <meta property="og:site_name" content="kimanuul&#39;s blog">
-<meta property="og:description" content="데이터 불러오기경로 설정이 매우 중요getwd()#setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory#csv파일 &#x2F; 엑셀파일 여기까지가 어제 배운 내용#91p mpg1.csv mpg1 &lt;- read.csv(“mp">
+<meta property="og:description" content="데이터 불러오기-경로 설정이 매우 중요 1getwd()  1## [1] &quot;C:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;source&quot;  -setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory-csv">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-06-21T00:00:00.000Z">
-<meta property="article:modified_time" content="2022-06-21T02:53:50.576Z">
+<meta property="article:modified_time" content="2022-06-21T03:25:52.358Z">
 <meta property="article:author" content="HANWOOL KIM">
 <meta name="twitter:card" content="summary">
   
@@ -91,7 +91,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      day-3
+      R 기초문법 통계
     </h1>
   
 
@@ -99,26 +99,92 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="데이터-불러오기"><a href="#데이터-불러오기" class="headerlink" title="데이터 불러오기"></a>데이터 불러오기</h1><h1 id="경로-설정이-매우-중요"><a href="#경로-설정이-매우-중요" class="headerlink" title="경로 설정이 매우 중요"></a>경로 설정이 매우 중요</h1><p>getwd()<br>#setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory<br>#csv파일 &#x2F; 엑셀파일</p>
-<h1 id="여기까지가-어제-배운-내용"><a href="#여기까지가-어제-배운-내용" class="headerlink" title="여기까지가 어제 배운 내용"></a>여기까지가 어제 배운 내용</h1><p>#91p mpg1.csv</p>
-<p>mpg1 &lt;- read.csv(“mpg1.csv”, stringsAsFactors &#x3D; F) #데이터 범주 설정<br>str(mpg1)</p>
-<h1 id="평균"><a href="#평균" class="headerlink" title="평균"></a>평균</h1><p>mean(mtcars$mpg) # 평균<br>var(mtcars$mpg) # 분산<br>sd(mtcars$mpg) # 표준편차</p>
-<h1 id="사분위수-전체-수를-4등분한-수"><a href="#사분위수-전체-수를-4등분한-수" class="headerlink" title="사분위수 (전체 수를 4등분한 수)"></a>사분위수 (전체 수를 4등분한 수)</h1><h1 id="IQR-1사분위수와-3사분위수-사이의-거리-gt-이상치-제거할-때-활용"><a href="#IQR-1사분위수와-3사분위수-사이의-거리-gt-이상치-제거할-때-활용" class="headerlink" title="IQR: 1사분위수와 3사분위수 사이의 거리 -&gt; 이상치 제거할 때 활용"></a>IQR: 1사분위수와 3사분위수 사이의 거리 -&gt; 이상치 제거할 때 활용</h1><p>quantile(mtcars$mpg)  # 사분위수 함수, 파이선에도 있음</p>
-<h1 id="통계-요약-구하기"><a href="#통계-요약-구하기" class="headerlink" title="통계 요약 구하기"></a>통계 요약 구하기</h1><p>summary(iris$Sepal.Length)</p>
-<h1 id="빈도-분석"><a href="#빈도-분석" class="headerlink" title="빈도 분석"></a>빈도 분석</h1><h1 id="범주별-빈도-gt-문자"><a href="#범주별-빈도-gt-문자" class="headerlink" title="범주별 빈도 -&gt; 문자"></a>범주별 빈도 -&gt; 문자</h1><p>str(mpg1)</p>
-<p>table(mpg1$trans)  # 빈도분석 함수<br>table(mpg1$manufacturer)</p>
-<p>table(mpg1$trans, mpg1$manufacturer)</p>
-<h1 id="빈도의-비율-구하기"><a href="#빈도의-비율-구하기" class="headerlink" title="빈도의 비율 구하기"></a>빈도의 비율 구하기</h1><p>a &lt;- table(mpg1$trans)<br>prop.table(a) # prop -&gt; 비율 proportion 함수</p>
-<p>b &lt;- table(mpg1$trans, mpg1$drv)<br>prop.table(b)</p>
-<p>prop.table(table(mpg1$manufacturer))</p>
-<h1 id="행과-열의-비율-형식-맞추기-교재-93p"><a href="#행과-열의-비율-형식-맞추기-교재-93p" class="headerlink" title="행과 열의 비율 형식 맞추기(교재 93p)"></a>행과 열의 비율 형식 맞추기(교재 93p)</h1><p>prop.table(b, margin &#x3D; 1) #행의 합이 1이 되도록 비율 표시<br>prop.table(b, margin &#x3D; 2) #열의 합이 1이 되도록 비율 표시</p>
-<h1 id="소수점-아래-자리수-지정"><a href="#소수점-아래-자리수-지정" class="headerlink" title="소수점 아래 자리수 지정"></a>소수점 아래 자리수 지정</h1><p>round(0.32123141, 2) #반올림하여 소수점 두번째 자리까지만 표시</p>
-<p>round(prop.table(table(mpg1$trans)), 2)</p>
+        <h1 id="데이터-불러오기"><a href="#데이터-불러오기" class="headerlink" title="데이터 불러오기"></a>데이터 불러오기</h1><p>-경로 설정이 매우 중요</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getwd<span class="punctuation">(</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## [1] &quot;C:/Users/human/Desktop/R_lecture/source&quot;</span><br></pre></td></tr></table></figure>
+
+<p>-setwd(“c:&#x2F;Users&#x2F;human&#x2F;Desktop&#x2F;R_lecture&#x2F;data”) -&gt; set as working directory<br>-csv파일 &#x2F; 엑셀파일<br>-여기까지가 어제 배운 내용</p>
+<p>-91p mpg1.csv</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mpg1 <span class="operator">&lt;-</span> read.csv<span class="punctuation">(</span><span class="string">&quot;data/mpg1.csv&quot;</span><span class="punctuation">,</span> stringsAsFactors <span class="operator">=</span> <span class="built_in">F</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str<span class="punctuation">(</span>mpg1<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">## &#x27;data.frame&#x27;:	234 obs. of  5 variables:</span><br><span class="line">##  $ manufacturer: chr  &quot;audi&quot; &quot;audi&quot; &quot;audi&quot; &quot;audi&quot; ...</span><br><span class="line">##  $ trans       : chr  &quot;auto&quot; &quot;manual&quot; &quot;manual&quot; &quot;auto&quot; ...</span><br><span class="line">##  $ drv         : chr  &quot;f&quot; &quot;f&quot; &quot;f&quot; &quot;f&quot; ...</span><br><span class="line">##  $ cty         : int  18 21 20 21 16 18 18 18 16 20 ...</span><br><span class="line">##  $ hwy         : int  29 29 31 30 26 26 27 26 25 28 ...</span><br></pre></td></tr></table></figure>
+
+<h1 id="평균"><a href="#평균" class="headerlink" title="평균"></a>평균</h1><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mean<span class="punctuation">(</span>mtcars<span class="operator">$</span>mpg<span class="punctuation">)</span> <span class="comment"># 평균</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## [1] 20.09062</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var<span class="punctuation">(</span>mtcars<span class="operator">$</span>mpg<span class="punctuation">)</span> <span class="comment"># 분산</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## [1] 36.3241</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sd<span class="punctuation">(</span>mtcars<span class="operator">$</span>mpg<span class="punctuation">)</span> <span class="comment"># 표준편차</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## [1] 6.026948</span><br></pre></td></tr></table></figure>
+
+<h1 id="사분위수-전체-수를-4등분한-수"><a href="#사분위수-전체-수를-4등분한-수" class="headerlink" title="사분위수 (전체 수를 4등분한 수)"></a>사분위수 (전체 수를 4등분한 수)</h1><h1 id="IQR-1사분위수와-3사분위수-사이의-거리-gt-이상치-제거할-때-활용"><a href="#IQR-1사분위수와-3사분위수-사이의-거리-gt-이상치-제거할-때-활용" class="headerlink" title="IQR: 1사분위수와 3사분위수 사이의 거리 -&gt; 이상치 제거할 때 활용"></a>IQR: 1사분위수와 3사분위수 사이의 거리 -&gt; 이상치 제거할 때 활용</h1><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">quantile<span class="punctuation">(</span>mtcars<span class="operator">$</span>mpg<span class="punctuation">)</span>  <span class="comment"># 사분위수 함수, 파이선에도 있음</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">##     0%    25%    50%    75%   100% </span><br><span class="line">## 10.400 15.425 19.200 22.800 33.900</span><br></pre></td></tr></table></figure>
+
+<h1 id="통계-요약-구하기"><a href="#통계-요약-구하기" class="headerlink" title="통계 요약 구하기"></a>통계 요약 구하기</h1><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">summary<span class="punctuation">(</span>iris<span class="operator">$</span>Sepal.Length<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span><br><span class="line">##   4.300   5.100   5.800   5.843   6.400   7.900</span><br></pre></td></tr></table></figure>
+
+<h1 id="빈도-분석"><a href="#빈도-분석" class="headerlink" title="빈도 분석"></a>빈도 분석</h1><ul>
+<li>범주별 빈도 -&gt; 문자</li>
+</ul>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str<span class="punctuation">(</span>mpg1<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">## &#x27;data.frame&#x27;:	234 obs. of  5 variables:</span><br><span class="line">##  $ manufacturer: chr  &quot;audi&quot; &quot;audi&quot; &quot;audi&quot; &quot;audi&quot; ...</span><br><span class="line">##  $ trans       : chr  &quot;auto&quot; &quot;manual&quot; &quot;manual&quot; &quot;auto&quot; ...</span><br><span class="line">##  $ drv         : chr  &quot;f&quot; &quot;f&quot; &quot;f&quot; &quot;f&quot; ...</span><br><span class="line">##  $ cty         : int  18 21 20 21 16 18 18 18 16 20 ...</span><br><span class="line">##  $ hwy         : int  29 29 31 30 26 26 27 26 25 28 ...</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">table<span class="punctuation">(</span>mpg1<span class="operator">$</span>trans<span class="punctuation">)</span>  <span class="comment"># 빈도분석 함수</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## </span><br><span class="line">##   auto manual </span><br><span class="line">##    157     77</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">table<span class="punctuation">(</span>mpg1<span class="operator">$</span>manufacturer<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">## </span><br><span class="line">##       audi  chevrolet      dodge       ford      honda    hyundai       jeep </span><br><span class="line">##         18         19         37         25          9         14          8 </span><br><span class="line">## land rover    lincoln    mercury     nissan    pontiac     subaru     toyota </span><br><span class="line">##          4          3          4         13          5         14         34 </span><br><span class="line">## volkswagen </span><br><span class="line">##         27</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">table<span class="punctuation">(</span>mpg1<span class="operator">$</span>trans<span class="punctuation">,</span> mpg1<span class="operator">$</span>manufacturer<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">##         </span><br><span class="line">##          audi chevrolet dodge ford honda hyundai jeep land rover lincoln</span><br><span class="line">##   auto     11        16    30   17     4       7    8          4       3</span><br><span class="line">##   manual    7         3     7    8     5       7    0          0       0</span><br><span class="line">##         </span><br><span class="line">##          mercury nissan pontiac subaru toyota volkswagen</span><br><span class="line">##   auto         4      8       5      7     20         13</span><br><span class="line">##   manual       0      5       0      7     14         14</span><br></pre></td></tr></table></figure>
+
+<h1 id="빈도의-비율-구하기"><a href="#빈도의-비율-구하기" class="headerlink" title="빈도의 비율 구하기"></a>빈도의 비율 구하기</h1><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a <span class="operator">&lt;-</span> table<span class="punctuation">(</span>mpg1<span class="operator">$</span>trans<span class="punctuation">)</span></span><br><span class="line">prop.table<span class="punctuation">(</span>a<span class="punctuation">)</span> <span class="comment"># prop -&gt; 비율 proportion 함수</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## </span><br><span class="line">##      auto    manual </span><br><span class="line">## 0.6709402 0.3290598</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b <span class="operator">&lt;-</span> table<span class="punctuation">(</span>mpg1<span class="operator">$</span>trans<span class="punctuation">,</span> mpg1<span class="operator">$</span>drv<span class="punctuation">)</span></span><br><span class="line">prop.table<span class="punctuation">(</span>b<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">##         </span><br><span class="line">##                   4          f          r</span><br><span class="line">##   auto   0.32051282 0.27777778 0.07264957</span><br><span class="line">##   manual 0.11965812 0.17521368 0.03418803</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prop.table<span class="punctuation">(</span>table<span class="punctuation">(</span>mpg1<span class="operator">$</span>manufacturer<span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">## </span><br><span class="line">##       audi  chevrolet      dodge       ford      honda    hyundai       jeep </span><br><span class="line">## 0.07692308 0.08119658 0.15811966 0.10683761 0.03846154 0.05982906 0.03418803 </span><br><span class="line">## land rover    lincoln    mercury     nissan    pontiac     subaru     toyota </span><br><span class="line">## 0.01709402 0.01282051 0.01709402 0.05555556 0.02136752 0.05982906 0.14529915 </span><br><span class="line">## volkswagen </span><br><span class="line">## 0.11538462</span><br></pre></td></tr></table></figure>
+
+<h1 id="행과-열의-비율-형식-맞추기-교재-93p"><a href="#행과-열의-비율-형식-맞추기-교재-93p" class="headerlink" title="행과 열의 비율 형식 맞추기(교재 93p)"></a>행과 열의 비율 형식 맞추기(교재 93p)</h1><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prop.table<span class="punctuation">(</span>b<span class="punctuation">,</span> margin <span class="operator">=</span> <span class="number">1</span><span class="punctuation">)</span> <span class="comment">#행의 합이 1이 되도록 비율 표시</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">##         </span><br><span class="line">##                  4         f         r</span><br><span class="line">##   auto   0.4777070 0.4140127 0.1082803</span><br><span class="line">##   manual 0.3636364 0.5324675 0.1038961</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prop.table<span class="punctuation">(</span>b<span class="punctuation">,</span> margin <span class="operator">=</span> <span class="number">2</span><span class="punctuation">)</span> <span class="comment">#열의 합이 1이 되도록 비율 표시</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">##         </span><br><span class="line">##                  4         f         r</span><br><span class="line">##   auto   0.7281553 0.6132075 0.6800000</span><br><span class="line">##   manual 0.2718447 0.3867925 0.3200000</span><br></pre></td></tr></table></figure>
+
+<h1 id="소수점-아래-자리수-지정"><a href="#소수점-아래-자리수-지정" class="headerlink" title="소수점 아래 자리수 지정"></a>소수점 아래 자리수 지정</h1><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">round</span><span class="punctuation">(</span><span class="number">0.32123141</span><span class="punctuation">,</span> <span class="number">2</span><span class="punctuation">)</span> <span class="comment">#반올림하여 소수점 두번째 자리까지만 표시</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## [1] 0.32</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">round</span><span class="punctuation">(</span>prop.table<span class="punctuation">(</span>table<span class="punctuation">(</span>mpg1<span class="operator">$</span>trans<span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">,</span> <span class="number">2</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## </span><br><span class="line">##   auto manual </span><br><span class="line">##   0.67   0.33</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kimanuul.github.io/2022/06/21/day0621/" data-id="cl4nkon180000ncvof3wg65yc" data-title="day-3" class="article-share-link">Share</a>
+      <a data-url="https://kimanuul.github.io/2022/06/21/day0621/" data-id="cl4nkon180000ncvof3wg65yc" data-title="R 기초문법 통계" class="article-share-link">Share</a>
       
       
       
@@ -169,7 +235,7 @@
       <ul>
         
           <li>
-            <a href="/2022/06/21/day0621/">day-3</a>
+            <a href="/2022/06/21/day0621/">R 기초문법 통계</a>
           </li>
         
           <li>
