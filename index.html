@@ -642,17 +642,17 @@ mango
 </ul>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mpg1 <span class="operator">&lt;-</span> read.csv<span class="punctuation">(</span><span class="string">&quot;data/mpg1.csv&quot;</span><span class="punctuation">)</span></span><br><span class="line">boxplot<span class="punctuation">(</span>mpg1<span class="operator">$</span>cty<span class="punctuation">)</span></span><br><span class="line">boxplot<span class="punctuation">(</span>mpg1<span class="operator">$</span>cty<span class="punctuation">)</span><span class="operator">$</span>stats</span><br></pre></td></tr></table></figure>
 
-<p><img src="/day0622_files/figure-html/unnamed-chunk-12-1.png"><!-- --></p>
+<p><img src="/images/day0622/unnamed-chunk-12-1.png"><!-- --></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">##      [,1]</span><br><span class="line">## [1,]    9</span><br><span class="line">## [2,]   14</span><br><span class="line">## [3,]   17</span><br><span class="line">## [4,]   19</span><br><span class="line">## [5,]   26</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boxplot<span class="punctuation">(</span>mpg1<span class="operator">$</span>cty<span class="punctuation">,</span> mpg1<span class="operator">$</span>hwy<span class="punctuation">)</span><span class="operator">$</span>stats</span><br></pre></td></tr></table></figure>
 
-<p><img src="/day0622_files/figure-html/unnamed-chunk-12-2.png"><!-- --></p>
+<p><img src="/images/day0622/unnamed-chunk-12-2.png"><!-- --></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">##      [,1] [,2]</span><br><span class="line">## [1,]    9   12</span><br><span class="line">## [2,]   14   18</span><br><span class="line">## [3,]   17   24</span><br><span class="line">## [4,]   19   27</span><br><span class="line">## [5,]   26   37</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boxplot<span class="punctuation">(</span>mpg1<span class="operator">$</span>cty<span class="operator">~</span>mpg1<span class="operator">$</span>drv<span class="punctuation">)</span><span class="operator">$</span>stats</span><br></pre></td></tr></table></figure>
 
-<p><img src="/day0622_files/figure-html/unnamed-chunk-12-3.png"><!-- --></p>
+<p><img src="/images/day0622/unnamed-chunk-12-3.png"><!-- --></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">##      [,1] [,2] [,3]</span><br><span class="line">## [1,]    9   15   11</span><br><span class="line">## [2,]   13   18   12</span><br><span class="line">## [3,]   14   19   15</span><br><span class="line">## [4,]   16   21   15</span><br><span class="line">## [5,]   20   25   18</span><br></pre></td></tr></table></figure>
 
 
