@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Python 기초함수 | kimanuul&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="반복문 복습 for loop and while loop  123for i in range(3):  print(&quot;Hello World&quot;)  print(&quot;안녕하세요&quot;)  Hello World 안녕하세요 Hello World 안녕하세요 Hello World 안녕하세요  123456789101112&quot;K&quot; in">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 기초함수">
+<meta property="og:url" content="https://kimanuul.github.io/2022/06/28/day0628/index.html">
+<meta property="og:site_name" content="kimanuul&#39;s blog">
+<meta property="og:description" content="반복문 복습 for loop and while loop  123for i in range(3):  print(&quot;Hello World&quot;)  print(&quot;안녕하세요&quot;)  Hello World 안녕하세요 Hello World 안녕하세요 Hello World 안녕하세요  123456789101112&quot;K&quot; in">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-06-28T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-28T07:49:34.956Z">
+<meta property="article:author" content="HANWOOL KIM">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="kimanuul's blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">kimanuul&#39;s blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">첫 연습인데 어렵네여</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://kimanuul.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-day0628" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/06/28/day0628/" class="article-date">
+  <time class="dt-published" datetime="2022-06-28T00:00:00.000Z" itemprop="datePublished">2022-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Python 기초함수
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="반복문-복습"><a href="#반복문-복습" class="headerlink" title="반복문 복습"></a>반복문 복습</h2><ul>
+<li>for loop and while loop</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;Hello World&quot;</span>)</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;안녕하세요&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>Hello World
+안녕하세요
+Hello World
+안녕하세요
+Hello World
+안녕하세요
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;K&quot;</span> <span class="keyword">in</span> <span class="string">&quot;Kaggle&quot;</span></span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;K&quot;</span> == <span class="string">&quot;a&quot;</span>:</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;출력이 되나요?&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">  a = <span class="string">&quot;Kaggle&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1000</span>):</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;No.&quot;</span>,i+<span class="number">1</span>)</span><br><span class="line">  <span class="keyword">if</span> i == <span class="number">10</span>:</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;Hello World&quot;</span>)</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;안녕하세요&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>No. 1
+Hello World
+안녕하세요
+No. 2
+Hello World
+안녕하세요
+No. 3
+Hello World
+안녕하세요
+No. 4
+Hello World
+안녕하세요
+No. 5
+Hello World
+안녕하세요
+No. 6
+Hello World
+안녕하세요
+No. 7
+Hello World
+안녕하세요
+No. 8
+Hello World
+안녕하세요
+No. 9
+Hello World
+안녕하세요
+No. 10
+Hello World
+안녕하세요
+No. 11
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="string">&quot;Kaggle&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1000</span>):</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;No.&quot;</span>,i+<span class="number">1</span>)</span><br><span class="line">  <span class="keyword">if</span> i == <span class="number">10</span>:</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+<pre><code>No. 1
+No. 2
+No. 3
+No. 4
+No. 5
+No. 6
+No. 7
+No. 8
+No. 9
+No. 10
+No. 11
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> num <span class="keyword">in</span> numbers:</span><br><span class="line">  <span class="comment"># print(&quot;numbers: &quot;, num)</span></span><br><span class="line">  <span class="built_in">sum</span> = <span class="built_in">sum</span> + num</span><br><span class="line">  <span class="comment"># print(&quot;total: &quot;, sum)</span></span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;---최종 결과값---&quot;</span>)</span><br><span class="line">  <span class="built_in">print</span>(<span class="built_in">sum</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>---최종 결과값---
+1
+---최종 결과값---
+3
+---최종 결과값---
+6
+---최종 결과값---
+10
+---최종 결과값---
+15
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">fruits = [<span class="string">&#x27;apple&#x27;</span>, <span class="string">&#x27;kiwi&#x27;</span>, <span class="string">&#x27;mango&#x27;</span>]</span><br><span class="line">newlist = []</span><br><span class="line"></span><br><span class="line"><span class="comment"># apple : a가 있나요? 있네요. newlist에 추가하세요.</span></span><br><span class="line"><span class="comment"># kiwi : a가 있나요? 없네요. 그럼 넘어가요</span></span><br><span class="line"><span class="comment"># mango : a가 있나요? 있네요. newlist에 추가하세요.</span></span><br><span class="line"><span class="keyword">for</span> fruit <span class="keyword">in</span> fruits:</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">&quot;조건문 밖 : &quot;</span>, fruit)</span><br><span class="line">   <span class="keyword">if</span> <span class="string">&quot;a&quot;</span> <span class="keyword">in</span> fruit:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;조건문 안쪽 : &quot;</span>, fruit)</span><br><span class="line">    newlist.append(fruit)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(newlist)</span><br></pre></td></tr></table></figure>
+
+<pre><code>조건문 밖 :  apple
+조건문 안쪽 :  apple
+조건문 밖 :  kiwi
+조건문 밖 :  mango
+조건문 안쪽 :  mango
+[&#39;apple&#39;, &#39;mango&#39;]
+</code></pre>
+<h2 id="While-Loop"><a href="#While-Loop" class="headerlink" title="While Loop"></a>While Loop</h2><p>while문 : 분석할 때 쓰일 일은 없음, 주로 개발(알고리즘)할 때 많이 씀</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">i = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> i &lt; <span class="number">10</span>: <span class="comment"># 참일 때만 반복문 코드가 돎</span></span><br><span class="line">  <span class="comment"># 코드</span></span><br><span class="line">  <span class="built_in">print</span>(i)</span><br><span class="line">  i += <span class="number">1</span> <span class="comment"># 1씩 증감</span></span><br><span class="line">  <span class="comment"># i -= 1 # 1씩 감소</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>1
+2
+3
+4
+5
+6
+7
+8
+9
+</code></pre>
+<h2 id="사용자-정의-함수"><a href="#사용자-정의-함수" class="headerlink" title="사용자 정의 함수"></a>사용자 정의 함수</h2><ul>
+<li>내가 필요에 의해 직접 함수를 작성</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">함수명</span>(<span class="params">param1, param2</span>):</span><br><span class="line">  <span class="comment"># 코드</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">a = <span class="number">0</span>, b = <span class="number">1</span></span>):</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(add(a = <span class="number">5</span>, b = <span class="number">4</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>9
+</code></pre>
+<ul>
+<li>사칙연산 사용자 정의 함수 만들기</li>
+<li>함수 문서화<ul>
+<li>키워드 : Docstring</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">a = <span class="number">0</span>, b = <span class="number">0</span></span>):</span><br><span class="line">  <span class="keyword">return</span> a + b</span><br><span class="line">  </span><br><span class="line"><span class="built_in">print</span>(add(a = <span class="number">3</span>, b = <span class="number">3</span> ))</span><br></pre></td></tr></table></figure>
+
+<pre><code>6
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">sub</span>(<span class="params">a = <span class="number">0</span>, b = <span class="number">0</span></span>):</span><br><span class="line">  <span class="keyword">return</span> a - b</span><br><span class="line">  </span><br><span class="line"><span class="built_in">print</span>(sub(a = <span class="number">3</span>, b = <span class="number">3</span> ))</span><br></pre></td></tr></table></figure>
+
+<pre><code>0
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">mul</span>(<span class="params">a = <span class="number">0</span>, b = <span class="number">0</span></span>):</span><br><span class="line">  <span class="keyword">return</span> a*b</span><br><span class="line">  </span><br><span class="line"><span class="built_in">print</span>(mul(a = <span class="number">3</span>, b = <span class="number">3</span> ))</span><br></pre></td></tr></table></figure>
+
+<pre><code>9
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">div</span>(<span class="params">a = <span class="number">1</span>, b = <span class="number">1</span></span>):</span><br><span class="line">  <span class="keyword">return</span> a/b</span><br><span class="line">  </span><br><span class="line"><span class="built_in">print</span>(div(a = <span class="number">3</span>, b = <span class="number">3</span> ))</span><br></pre></td></tr></table></figure>
+
+<pre><code>1.0
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">a = <span class="number">0</span>, b = <span class="number">0</span></span>):</span><br><span class="line">  <span class="keyword">return</span> a + b</span><br><span class="line"></span><br><span class="line">a = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;숫자1을 입력하세요..!&quot;</span>))</span><br><span class="line">b = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;숫자2를 입력하세요..!&quot;</span>))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(add(a, b))</span><br></pre></td></tr></table></figure>
+
+<pre><code>숫자1을 입력하세요..!3
+숫자2를 입력하세요..!3
+6
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">subtract</span>(<span class="params">a, b</span>):</span><br><span class="line"></span><br><span class="line">  <span class="string">&quot;&quot;&quot;a, b를 빼는 함수</span></span><br><span class="line"><span class="string">  Parameters:</span></span><br><span class="line"><span class="string">  a(int): int형 숫자 a가 입력</span></span><br><span class="line"><span class="string">  b(int): int형 숫자 b가 입력</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  Returns:</span></span><br><span class="line"><span class="string">    int : 반환값</span></span><br><span class="line"><span class="string">  &quot;&quot;&quot;</span></span><br><span class="line">  <span class="keyword">return</span> a - b</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(subtract(a = <span class="number">5</span>, b = <span class="number">10</span>))</span><br><span class="line"><span class="built_in">print</span>(subtract.__doc__)</span><br></pre></td></tr></table></figure>
+
+<pre><code>-5
+a, b를 빼는 함수
+  Parameters:
+  a(int): int형 숫자 a가 입력
+  b(int): int형 숫자 b가 입력
+
+  Returns:
+    int : 반환값
+  
+</code></pre>
+<h2 id="NumPy"><a href="#NumPy" class="headerlink" title="NumPy"></a>NumPy</h2><ul>
+<li>두 개의 리스트(덧셈, 곱셈만 가능)를 행렬로 변환하여 나눌 수 있게 해줌</li>
+<li>외장 모듈(내장 모듈, 라이브러리, 패키지가 아님, 별도 라이브러리 설치 필요)</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np <span class="comment"># np -&gt; numpy</span></span><br><span class="line"><span class="built_in">print</span>(np.__version__)</span><br></pre></td></tr></table></figure>
+
+<pre><code>1.21.6
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">temp = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">temp_array = np.array(temp) <span class="comment"># 리스트에서 배열로 변환</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(temp))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(temp_array))</span><br></pre></td></tr></table></figure>
+
+<pre><code>&lt;class &#39;list&#39;&gt;
+&lt;class &#39;numpy.ndarray&#39;&gt;
+</code></pre>
+<h2 id="사칙연"><a href="#사칙연" class="headerlink" title="사칙연"></a>사칙연</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">math_score = [<span class="number">90</span>, <span class="number">80</span>, <span class="number">100</span>, <span class="number">60</span>]</span><br><span class="line">eng_score = [<span class="number">80</span>, <span class="number">90</span>, <span class="number">100</span>, <span class="number">50</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># math_score + eng_score</span></span><br><span class="line"></span><br><span class="line">math_array = np.array(math_score)</span><br><span class="line">eng_array = np.array(eng_score)</span><br><span class="line"></span><br><span class="line">total = math_array + eng_array</span><br><span class="line"><span class="built_in">print</span>(total)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(total))</span><br></pre></td></tr></table></figure>
+
+<pre><code>[170 170 200 110]
+&lt;class &#39;numpy.ndarray&#39;&gt;
+</code></pre>
+<h2 id="집계함수"><a href="#집계함수" class="headerlink" title="집계함수"></a>집계함수</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(np.<span class="built_in">min</span>(total))</span><br><span class="line"><span class="built_in">print</span>(np.<span class="built_in">max</span>(total))</span><br><span class="line"><span class="built_in">print</span>(np.<span class="built_in">sum</span>(total))</span><br></pre></td></tr></table></figure>
+
+<pre><code>110
+200
+650
+</code></pre>
+<h2 id="차원-확인"><a href="#차원-확인" class="headerlink" title="차원 확인"></a>차원 확인</h2><ul>
+<li>배열의 차원 확인 필요</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1차원 배열 생성</span></span><br><span class="line">temp_arr = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line"><span class="built_in">print</span>(temp_arr.shape)</span><br><span class="line"><span class="built_in">print</span>(temp_arr.ndim) <span class="comment"># 차원을 확인하는 함수</span></span><br><span class="line"><span class="built_in">print</span>(temp_arr)</span><br></pre></td></tr></table></figure>
+
+<pre><code>(3,)
+1
+[1 2 3]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2차원 배열 생성</span></span><br><span class="line">temp_arr = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line"><span class="built_in">print</span>(temp_arr.shape)</span><br><span class="line"><span class="built_in">print</span>(temp_arr.ndim)</span><br><span class="line"><span class="built_in">print</span>(temp_arr)</span><br></pre></td></tr></table></figure>
+
+<pre><code>(2, 3)
+2
+[[1 2 3]
+ [4 5 6]]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 3차원 배열 -&gt; 이미지</span></span><br><span class="line">temp_arr = np.array([[[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]], [[<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>], [<span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]]])</span><br><span class="line"><span class="built_in">print</span>(temp_arr.shape)</span><br><span class="line"><span class="built_in">print</span>(temp_arr.ndim)</span><br><span class="line"><span class="built_in">print</span>(temp_arr)</span><br></pre></td></tr></table></figure>
+
+<pre><code>(2, 2, 3)
+3
+[[[ 1  2  3]
+  [ 4  5  6]]
+
+ [[ 7  8  9]
+  [10 11 12]]]
+</code></pre>
+<h2 id="배열-생성의-다양한-방법들"><a href="#배열-생성의-다양한-방법들" class="headerlink" title="배열 생성의 다양한 방법들"></a>배열 생성의 다양한 방법들</h2><ul>
+<li>모두 0으로 채운다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="built_in">print</span>(np.__version__)  <span class="comment"># 버젼 체크는 필수</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>1.21.6
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">temp_arr = np.zeros((<span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>)) <span class="comment"># 3*3*3 행렬 생성</span></span><br><span class="line">temp_arr</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>array([[[0., 0., 0.],
+        [0., 0., 0.],
+        [0., 0., 0.]],
+
+       [[0., 0., 0.],
+        [0., 0., 0.],
+        [0., 0., 0.]],
+
+       [[0., 0., 0.],
+        [0., 0., 0.],
+        [0., 0., 0.]]])
+</code></pre>
+<ul>
+<li>모두 1로 채운다</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">temp_arr = np.ones((<span class="number">2</span>, <span class="number">3</span>))</span><br><span class="line">temp_arr</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>array([[1., 1., 1.],
+       [1., 1., 1.]])
+</code></pre>
+<ul>
+<li>임의의 상수값으로 채운다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">temp_arr = np.full((<span class="number">3</span>, <span class="number">3</span>,), <span class="number">5</span>)</span><br><span class="line">temp_arr</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>array([[5, 5, 5],
+       [5, 5, 5],
+       [5, 5, 5]])
+</code></pre>
+<ul>
+<li>최소, 최대 숫자의 범위를 정해두고 각 구간별로 값을 생성</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">temp_arr = np.linspace(<span class="number">5</span>, <span class="number">10</span>, <span class="number">10</span>) <span class="comment"># 5에서 10 사이의 값 10개 </span></span><br><span class="line">temp_arr</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>array([ 5.        ,  5.55555556,  6.11111111,  6.66666667,  7.22222222,
+        7.77777778,  8.33333333,  8.88888889,  9.44444444, 10.        ])
+</code></pre>
+<ul>
+<li>반복문 시 자주 등장하는 배열</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">temp_arr = np.arange(<span class="number">1</span>, <span class="number">11</span>, <span class="number">1</span>)</span><br><span class="line">temp_arr</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10])
+</code></pre>
+<h1 id="난수-생성"><a href="#난수-생성" class="headerlink" title="난수 생성"></a>난수 생성</h1><ul>
+<li>아래 둘은 같은 의미의 코드이다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> random</span><br><span class="line">x = random.rand()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
+
+<pre><code>0.19907248814642187
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line">x = numpy.random.rand()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
+
+<pre><code>0.5194615370225919
+</code></pre>
+<ul>
+<li>랜덤 정수값 추출</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> random</span><br><span class="line">x = random.randint(<span class="number">100</span>, size = (<span class="number">5</span>))</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(x))</span><br></pre></td></tr></table></figure>
+
+<pre><code>[79  0 23 92 48]
+&lt;class &#39;numpy.ndarray&#39;&gt;
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line">x = numpy.random.randint(<span class="number">100</span>, size = (<span class="number">5</span>))</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(x))</span><br></pre></td></tr></table></figure>
+
+<pre><code>[20 38 60 53 17]
+&lt;class &#39;numpy.ndarray&#39;&gt;
+</code></pre>
+<h1 id="랜덤-배열-실수값-추출"><a href="#랜덤-배열-실수값-추출" class="headerlink" title="랜덤 배열, 실수값 추출"></a>랜덤 배열, 실수값 추출</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> random</span><br><span class="line">x = random.rand(<span class="number">2</span>, <span class="number">5</span>)</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(x))</span><br></pre></td></tr></table></figure>
+
+<pre><code>[[0.9565263  0.54837567 0.96867699 0.48435514 0.87312763]
+ [0.44631944 0.56557746 0.93989491 0.22650144 0.96368522]]
+&lt;class &#39;numpy.ndarray&#39;&gt;
+</code></pre>
+<h1 id="Numpy-사칙연산"><a href="#Numpy-사칙연산" class="headerlink" title="Numpy 사칙연산"></a>Numpy 사칙연산</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">array_01 = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">array_02 = np.array([<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>])</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 덧셈</span></span><br><span class="line">newArr = np.add(array_01, array_02)</span><br><span class="line"><span class="built_in">print</span>(newArr)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 뺄셈</span></span><br><span class="line">newArr = np.subtract(array_01, array_02)</span><br><span class="line"><span class="built_in">print</span>(newArr)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 곱셈</span></span><br><span class="line">newArr = np.multiply(array_01, array_02)</span><br><span class="line"><span class="built_in">print</span>(newArr)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 나눗셈</span></span><br><span class="line">newArr = np.divide(array_01, array_02)</span><br><span class="line"><span class="built_in">print</span>(newArr)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 거듭제곱</span></span><br><span class="line">array_01 = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">array_02 = np.array([<span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>])</span><br><span class="line">newArr = np.power(array_01, array_02)</span><br><span class="line"><span class="built_in">print</span>(newArr)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>[11 22 33]
+[ -9 -18 -27]
+[10 40 90]
+[0.1 0.1 0.1]
+[1 4 9]
+</code></pre>
+<h2 id="소수점-정렬"><a href="#소수점-정렬" class="headerlink" title="소수점 정렬"></a>소수점 정렬</h2><ul>
+<li>소수점을 정렬하는 다양한 방법</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 소수점 제거</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">temp_arr = np.trunc([-<span class="number">1.23</span>, <span class="number">1.23</span>])</span><br><span class="line"><span class="built_in">print</span>(temp_arr)</span><br><span class="line"></span><br><span class="line">temp_arr = np.fix([-<span class="number">1.23</span>, <span class="number">1.23</span>])</span><br><span class="line"><span class="built_in">print</span>(temp_arr)</span><br></pre></td></tr></table></figure>
+
+<pre><code>[-1.  1.]
+[-1.  1.]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 임의의 소수점 자리에서 반올림</span></span><br><span class="line">temp_arr = np.around([-<span class="number">1.23456</span>, <span class="number">1.23456</span>], <span class="number">3</span>) <span class="comment"># 소수점 세번째 자리에서 반올림</span></span><br><span class="line"><span class="built_in">print</span>(temp_arr)</span><br></pre></td></tr></table></figure>
+
+<pre><code>[-1.235  1.235]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 소수점 내림</span></span><br><span class="line">temp_arr = np.floor([-<span class="number">1.23456</span>, <span class="number">1.23456</span>])</span><br><span class="line"><span class="built_in">print</span>(temp_arr)</span><br></pre></td></tr></table></figure>
+
+<pre><code>[-2.  1.]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 소수점 모두 올림</span></span><br><span class="line">temp_arr = np.ceil([-<span class="number">1.23456</span>, <span class="number">1.23456</span>])</span><br><span class="line"><span class="built_in">print</span>(temp_arr)</span><br></pre></td></tr></table></figure>
+
+<pre><code>[-1.  2.]
+</code></pre>
+<h2 id="조건식"><a href="#조건식" class="headerlink" title="조건식"></a>조건식</h2><ul>
+<li>pandas 가공</li>
+<li>numpy</li>
+<li>조건식<ul>
+<li>하나의 조건식(&#x3D;np.where)</li>
+<li>다중 조건식</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">temp_arr = np.arange(<span class="number">10</span>)</span><br><span class="line">temp_arr</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 5보다 작의면 원값 유지</span></span><br><span class="line"><span class="comment"># 5보다 크면 곱하기 10을 해줌</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># np.where(조건식, 참일 때, 거짓일 때)</span></span><br><span class="line">np.where(temp_arr &lt; <span class="number">5</span>, temp_arr, temp_arr * <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>array([ 0,  1,  2,  3,  4, 50, 60, 70, 80, 90])
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">temp_arr = np.arange(<span class="number">10</span>)</span><br><span class="line"><span class="comment"># temp_arr</span></span><br><span class="line">cond_list   = [temp_arr &gt; <span class="number">5</span>, temp_arr &lt;<span class="number">2</span> ]</span><br><span class="line">choice_list = [temp_arr *<span class="number">2</span>, temp_arr + <span class="number">100</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># np.selsect(조건식 리스트, 결과값 리스트, default = )</span></span><br><span class="line">np.select(cond_list, choice_list, default = temp_arr)</span><br></pre></td></tr></table></figure>
+
+
+
+
+<pre><code>array([100, 101,   2,   3,   4,   5,  12,  14,  16,  18])
+</code></pre>
+<h2 id="Reshape"><a href="#Reshape" class="headerlink" title="Reshape"></a>Reshape</h2><ul>
+<li>배열의 차원 또는 크기를 바꾼다.</li>
+<li>곱셈만 할 줄 알면 끝</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">temp_array = np.ones((<span class="number">3</span>, <span class="number">4</span>))</span><br><span class="line"><span class="built_in">print</span>(temp_array.shape)</span><br><span class="line"><span class="built_in">print</span>(temp_array)</span><br></pre></td></tr></table></figure>
+
+<pre><code>(3, 4)
+[[1. 1. 1. 1.]
+ [1. 1. 1. 1.]
+ [1. 1. 1. 1.]]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">after_reshape = temp_array.reshape(<span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>) <span class="comment"># 곱이 12</span></span><br><span class="line"><span class="built_in">print</span>(after_reshape.shape)</span><br><span class="line"><span class="built_in">print</span>(after_reshape)</span><br></pre></td></tr></table></figure>
+
+<pre><code>(2, 2, 3)
+[[[1. 1. 1.]
+  [1. 1. 1.]]
+
+ [[1. 1. 1.]
+  [1. 1. 1.]]]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 원하는 자리값을 넣고 남은 곳에 -1을 넣어주면 데이터 값에 맞는 자리값을 설정해준다.</span></span><br><span class="line">after_reshape = temp_array.reshape(<span class="number">2</span>, <span class="number">2</span>, -<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(after_reshape.shape)</span><br><span class="line"><span class="built_in">print</span>(after_reshape)</span><br></pre></td></tr></table></figure>
+
+<pre><code>(2, 2, 3)
+[[[1. 1. 1.]
+  [1. 1. 1.]]
+
+ [[1. 1. 1.]
+  [1. 1. 1.]]]
+</code></pre>
+<h1 id="브로드-캐스팅"><a href="#브로드-캐스팅" class="headerlink" title="브로드 캐스팅"></a>브로드 캐스팅</h1><ul>
+<li>서로 다른 크기의 배열을 계산할 때의 기본적인 규칙을 의미</li>
+</ul>
+<h1 id="pandas-튜토리얼"><a href="#pandas-튜토리얼" class="headerlink" title="pandas 튜토리얼"></a>pandas 튜토리얼</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="built_in">print</span>(pd.__version__)</span><br></pre></td></tr></table></figure>
+
+<pre><code>1.3.5
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">temp_dict = &#123;</span><br><span class="line">    <span class="string">&#x27;col1&#x27;</span> : [<span class="number">1</span>, <span class="number">2</span>],</span><br><span class="line">    <span class="string">&#x27;col2&#x27;</span> : [<span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame(temp_dict)</span><br><span class="line"><span class="built_in">print</span>(df)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(df))</span><br></pre></td></tr></table></figure>
+
+<pre><code>   col1  col2
+0     1     3
+1     2     4
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+</code></pre>
+<h2 id="구글-드라이브-연동"><a href="#구글-드라이브-연동" class="headerlink" title="구글 드라이브 연동"></a>구글 드라이브 연동</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> drive</span><br><span class="line">drive.mount(<span class="string">&#x27;/content/drive&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>Mounted at /content/drive
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">DATA_PATH = <span class="string">&#x27;/content/drive/MyDrive/Colab Notebooks/human_AI/Basic/Chapter 3. pandas/data/&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(DATA_PATH + <span class="string">&#x27;Lemonade2016.csv&#x27;</span>)</span><br><span class="line"></span><br><span class="line">lemonade = pd.read_csv(DATA_PATH + <span class="string">&#x27;Lemonade2016.csv&#x27;</span>)</span><br><span class="line"><span class="comment">#covid_df = pd.read_csv(DATA_PATH + &#x27;owid-covid-data.csv&#x27;)</span></span><br><span class="line"></span><br><span class="line">lemonade.info <span class="comment"># 파일이 잘 들어왔는지 확인</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>/content/drive/MyDrive/Colab Notebooks/human_AI/Basic/Chapter 3. pandas/data/Lemonade2016.csv
+
+
+
+
+
+&lt;bound method DataFrame.info of          Date Location  Lemon  Orange  Temperature  Leaflets  Price
+0    7/1/2016     Park     97      67           70      90.0   0.25
+1    7/2/2016     Park     98      67           72      90.0   0.25
+2    7/3/2016     Park    110      77           71     104.0   0.25
+3    7/4/2016    Beach    134      99           76      98.0   0.25
+4    7/5/2016    Beach    159     118           78     135.0   0.25
+5    7/6/2016    Beach    103      69           82      90.0   0.25
+6    7/6/2016    Beach    103      69           82      90.0   0.25
+7    7/7/2016    Beach    143     101           81     135.0   0.25
+8         NaN    Beach    123      86           82     113.0   0.25
+9    7/9/2016    Beach    134      95           80     126.0   0.25
+10  7/10/2016    Beach    140      98           82     131.0   0.25
+11  7/11/2016    Beach    162     120           83     135.0   0.25
+12  7/12/2016    Beach    130      95           84      99.0   0.25
+13  7/13/2016    Beach    109      75           77      99.0   0.25
+14  7/14/2016    Beach    122      85           78     113.0   0.25
+15  7/15/2016    Beach     98      62           75     108.0   0.50
+16  7/16/2016    Beach     81      50           74      90.0   0.50
+17  7/17/2016    Beach    115      76           77     126.0   0.50
+18  7/18/2016     Park    131      92           81     122.0   0.50
+19  7/19/2016     Park    122      85           78     113.0   0.50
+20  7/20/2016     Park     71      42           70       NaN   0.50
+21  7/21/2016     Park     83      50           77      90.0   0.50
+22  7/22/2016     Park    112      75           80     108.0   0.50
+23  7/23/2016     Park    120      82           81     117.0   0.50
+24  7/24/2016     Park    121      82           82     117.0   0.50
+25  7/25/2016     Park    156     113           84     135.0   0.50
+26  7/26/2016     Park    176     129           83     158.0   0.35
+27  7/27/2016     Park    104      68           80      99.0   0.35
+28  7/28/2016     Park     96      63           82      90.0   0.35
+29  7/29/2016     Park    100      66           81      95.0   0.35
+30  7/30/2016    Beach     88      57           82      81.0   0.35
+31  7/31/2016    Beach     76      47           82      68.0   0.35&gt;
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kimanuul.github.io/2022/06/28/day0628/" data-id="cl4xveevo0000zgvoarr1hd4d" data-title="Python 기초함수" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/06/27/day0627/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Python 기초문법</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/06/28/day0628/">Python 기초함수</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/27/day0627/">Python 기초문법</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/22/day0622/">22JUN2022_ MissingValue, Outlier</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/22/day0622_/">22JUN2022_ ggplot2</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/21/day0621/">21JUN2022_ Data Preprocessing</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 HANWOOL KIM<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
