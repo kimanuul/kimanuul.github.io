@@ -13,14 +13,14 @@
 <meta property="og:site_name" content="kimanuul&#39;s blog">
 <meta property="og:description" content="확률적 경사 하강법 점진적 학습(step, 보폭 학습률 XGBoost, LightGBM, 딥러닝(이미지 분류, 자연어 처리, 옵티마이저)   신경망 이미지 데이터, 자연어 자율주행 하루 데이터 1TB –&gt; 학습 한꺼번에 다 모델을 학습 어려움 샘플링, 배치, 에포크, 오차(&#x3D;손실, loss)가 가장 적은 지점을 찾아야 함   결론적으로 확률적">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://kimanuul.github.io/source/images/day0704/output_18_0.png">
-<meta property="og:image" content="https://kimanuul.github.io/source/images/day0704/output_32_1.png">
-<meta property="og:image" content="https://kimanuul.github.io/source/images/day0704/output_34_0.png">
+<meta property="og:image" content="https://kimanuul.github.io/images/day0704/output_18_0.png">
+<meta property="og:image" content="https://kimanuul.github.io/images/day0704/output_32_1.png">
+<meta property="og:image" content="https://kimanuul.github.io/images/day0704/output_34_0.png">
 <meta property="article:published_time" content="2022-07-04T00:00:00.000Z">
-<meta property="article:modified_time" content="2022-07-04T08:31:22.687Z">
+<meta property="article:modified_time" content="2022-07-04T08:37:27.490Z">
 <meta property="article:author" content="HANWOOL KIM">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://kimanuul.github.io/source/images/day0704/output_18_0.png">
+<meta name="twitter:image" content="https://kimanuul.github.io/images/day0704/output_18_0.png">
   
     <link rel="alternate" href="/atom.xml" title="kimanuul's blog" type="application/atom+xml">
   
@@ -205,7 +205,7 @@ memory usage: 7.6+ KB
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.plot(train_score)</span><br><span class="line">plt.plot(test_score)</span><br><span class="line">plt.legend([<span class="string">&quot;train&quot;</span>, <span class="string">&quot;test&quot;</span>])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/source/images/day0704/output_18_0.png" alt="png"></p>
+<p><img src="/images/day0704/output_18_0.png" alt="png"></p>
 <h2 id="결정트리"><a href="#결정트리" class="headerlink" title="결정트리"></a>결정트리</h2><ul>
 <li>wine 데이터 가져오기</li>
 </ul>
@@ -263,7 +263,7 @@ memory usage: 7.6+ KB
 <pre><code>0.89532422551472
 0.8569230769230769
 </code></pre>
-<p><img src="/source/images/day0704/output_32_1.png" alt="png"></p>
+<p><img src="/images/day0704/output_32_1.png" alt="png"></p>
 <h2 id="노드란-무엇인가"><a href="#노드란-무엇인가" class="headerlink" title="노드란 무엇인가?"></a>노드란 무엇인가?</h2><ul>
 <li>0 이면 레드 와인</li>
 <li>1 이면 화이트 와인</li>
@@ -271,7 +271,7 @@ memory usage: 7.6+ KB
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">plt.figure(figsize = (<span class="number">10</span>, <span class="number">7</span>))</span><br><span class="line">plot_tree(dt,</span><br><span class="line">          max_depth = <span class="number">1</span>,</span><br><span class="line">          filled = <span class="literal">True</span>,</span><br><span class="line">          feature_names = [<span class="string">&#x27;alcohol&#x27;</span>, <span class="string">&#x27;sugar&#x27;</span>, <span class="string">&#x27;pH&#x27;</span>])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/source/images/day0704/output_34_0.png" alt="png"></p>
+<p><img src="/images/day0704/output_34_0.png" alt="png"></p>
 <ul>
 <li><p>불순도</p>
 <ul>

@@ -201,7 +201,7 @@ memory usage: 7.6+ KB
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.plot(train_score)</span><br><span class="line">plt.plot(test_score)</span><br><span class="line">plt.legend([<span class="string">&quot;train&quot;</span>, <span class="string">&quot;test&quot;</span>])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/source/images/day0704/output_18_0.png" alt="png"></p>
+<p><img src="/images/day0704/output_18_0.png" alt="png"></p>
 <h2 id="결정트리"><a href="#결정트리" class="headerlink" title="결정트리"></a>결정트리</h2><ul>
 <li>wine 데이터 가져오기</li>
 </ul>
@@ -259,7 +259,7 @@ memory usage: 7.6+ KB
 <pre><code>0.89532422551472
 0.8569230769230769
 </code></pre>
-<p><img src="/source/images/day0704/output_32_1.png" alt="png"></p>
+<p><img src="/images/day0704/output_32_1.png" alt="png"></p>
 <h2 id="노드란-무엇인가"><a href="#노드란-무엇인가" class="headerlink" title="노드란 무엇인가?"></a>노드란 무엇인가?</h2><ul>
 <li>0 이면 레드 와인</li>
 <li>1 이면 화이트 와인</li>
@@ -267,7 +267,7 @@ memory usage: 7.6+ KB
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">plt.figure(figsize = (<span class="number">10</span>, <span class="number">7</span>))</span><br><span class="line">plot_tree(dt,</span><br><span class="line">          max_depth = <span class="number">1</span>,</span><br><span class="line">          filled = <span class="literal">True</span>,</span><br><span class="line">          feature_names = [<span class="string">&#x27;alcohol&#x27;</span>, <span class="string">&#x27;sugar&#x27;</span>, <span class="string">&#x27;pH&#x27;</span>])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/source/images/day0704/output_34_0.png" alt="png"></p>
+<p><img src="/images/day0704/output_34_0.png" alt="png"></p>
 <ul>
 <li><p>불순도</p>
 <ul>
@@ -519,7 +519,7 @@ memory usage: 7.6+ KB
 
 <pre><code>[[6. 7. 7.]] [[34  8 14]]
 </code></pre>
-<p><img src="/source/images/day0701_ch03/output_13_1.png" alt="png"></p>
+<p><img src="/images/day0701_ch03/output_13_1.png" alt="png"></p>
 <h2 id="선형회귀"><a href="#선형회귀" class="headerlink" title="선형회귀"></a>선형회귀</h2><ul>
 <li>136p</li>
 </ul>
@@ -6660,7 +6660,7 @@ dtype: int64
 
 <pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f0f0c2d5990&gt;
 </code></pre>
-<p><img src="/source/images/pandas/output_89_1.png" alt="png"></p>
+<p><img src="/images/pandas/output_89_1.png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">df = pd.DataFrame(np.random.randn(<span class="number">1000</span>, <span class="number">4</span>), index = ts.index,</span><br><span class="line">                  columns = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;D&#x27;</span>])</span><br><span class="line">df = df.cumsum()</span><br></pre></td></tr></table></figure>
 
 <h2 id="12-Getting-Data-In-x2F-Out"><a href="#12-Getting-Data-In-x2F-Out" class="headerlink" title="12. Getting Data In &#x2F; Out"></a>12. Getting Data In &#x2F; Out</h2><ul>
@@ -7353,7 +7353,7 @@ dtype: int64
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">plt.scatter(bream_length, bream_weight)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;length&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;weight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/source/images/day0630_ml/output_10_0.png" alt="png"></p>
+<p><img src="/images/day0630_ml/output_10_0.png" alt="png"></p>
 <ul>
 <li>파이썬 시각화는 객체지향으로 한다. </li>
 <li>이유 : 좀 더 이쁘고, 아름답게 다듬으려면… </li>
@@ -7362,7 +7362,7 @@ dtype: int64
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">ax.scatter(bream_length, bream_weight)</span><br><span class="line">ax.set_xlabel(<span class="string">&#x27;length&#x27;</span>)</span><br><span class="line">ax.set_ylabel(<span class="string">&#x27;weight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/source/images/day0630_ml/output_12_0.png" alt="png"></p>
+<p><img src="/images/day0630_ml/output_12_0.png" alt="png"></p>
 <ul>
 <li>빙어 데이터 준비하기</li>
 </ul>
@@ -7375,7 +7375,7 @@ dtype: int64
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fig, ax = plt.subplots()</span><br><span class="line">ax.scatter(bream_length, bream_weight)</span><br><span class="line">ax.scatter(smelt_length, smelt_weight)</span><br><span class="line">ax.set_xlabel(<span class="string">&#x27;length&#x27;</span>)</span><br><span class="line">ax.set_ylabel(<span class="string">&#x27;weight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/source/images/day0630_ml/output_16_0.png" alt="png"></p>
+<p><img src="/images/day0630_ml/output_16_0.png" alt="png"></p>
 <ul>
 <li>두개의 리스트 합치기</li>
 </ul>
@@ -7683,7 +7683,7 @@ dtype: int64
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">ax.scatter(perch_length, perch_weight)</span><br><span class="line">ax.set_xlabel(<span class="string">&#x27;length&#x27;</span>)</span><br><span class="line">ax.set_ylabel(<span class="string">&#x27;weight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/source/images/day0629_2/output_5_0.png" alt="png"></p>
+<p><img src="/images/day0629_2/output_5_0.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">train_input, test_input, train_target, test_target = train_test_split(</span><br><span class="line">    perch_length, perch_weight, random_state = <span class="number">42</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">train_input.shape, test_input.shape, train_target.shape, test_target.shape</span><br><span class="line"><span class="built_in">print</span>(train_input.ndim)</span><br></pre></td></tr></table></figure>
 
 <pre><code>1
