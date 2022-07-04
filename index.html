@@ -562,6 +562,155 @@ a, b를 빼는 함수
 
 
   
+    <article id="post-day0628_2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/06/28/day0628_2/" class="article-date">
+  <time class="dt-published" datetime="2022-06-28T00:00:00.000Z" itemprop="datePublished">2022-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/06/28/day0628_2/">Python 기초함수</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="함수-사용하기"><a href="#함수-사용하기" class="headerlink" title="함수 사용하기"></a>함수 사용하기</h1><h2 id="Hello-world-출력-함수-만들기"><a href="#Hello-world-출력-함수-만들기" class="headerlink" title="Hello, world! 출력 함수 만들기"></a>Hello, world! 출력 함수 만들기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>():</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&#x27;Hello, world!&#x27;</span>)</span><br><span class="line"></span><br><span class="line">hello()</span><br></pre></td></tr></table></figure>
+
+<pre><code>Hello, world!
+</code></pre>
+<h2 id="빈-함수-만들기"><a href="#빈-함수-만들기" class="headerlink" title="빈 함수 만들기"></a>빈 함수 만들기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hello</span>():</span><br><span class="line">  <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="덧셈-함수-만들기"><a href="#덧셈-함수-만들기" class="headerlink" title="덧셈 함수 만들기"></a>덧셈 함수 만들기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">a, b</span>):</span><br><span class="line">  <span class="built_in">print</span>(a + b)</span><br><span class="line"></span><br><span class="line">add(<span class="number">10</span>, <span class="number">20</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>30
+</code></pre>
+<h2 id="함수-독스트링-사용하기"><a href="#함수-독스트링-사용하기" class="headerlink" title="함수 독스트링 사용하기"></a>함수 독스트링 사용하기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">a, b</span>):</span><br><span class="line">  <span class="string">&quot;&quot;&quot;이 함수는 a와 b를 더한 뒤 결과를 반환하는 함수입니다.&quot;&quot;&quot;</span></span><br><span class="line">  <span class="keyword">return</span> a + b</span><br><span class="line"></span><br><span class="line">x = add(<span class="number">10</span>, <span class="number">20</span>)</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(add.__doc__) <span class="comment"># 함수의 독스트링 출력</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">help</span>(add)</span><br></pre></td></tr></table></figure>
+
+<pre><code>30
+이 함수는 a와 b를 더한 뒤 결과를 반환하는 함수입니다.
+Help on function add in module __main__:
+
+add(a, b)
+    이 함수는 a와 b를 더한 뒤 결과를 반환하는 함수입니다.
+</code></pre>
+<h2 id="함수의-결과를-반환하기"><a href="#함수의-결과를-반환하기" class="headerlink" title="함수의 결과를 반환하기"></a>함수의 결과를 반환하기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">a, b</span>):</span><br><span class="line">  <span class="keyword">return</span> a + b</span><br><span class="line"></span><br><span class="line">x = add(<span class="number">10</span>, <span class="number">20</span>)</span><br><span class="line">x</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(add(<span class="number">10</span>, <span class="number">20</span>))</span><br></pre></td></tr></table></figure>
+
+<pre><code>30
+</code></pre>
+<h2 id="함수에서-값을-여러-개-반환하기"><a href="#함수에서-값을-여러-개-반환하기" class="headerlink" title="함수에서 값을 여러 개 반환하기"></a>함수에서 값을 여러 개 반환하기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add_sub</span>(<span class="params">a, b</span>):</span><br><span class="line">  <span class="keyword">return</span> a + b, a - b</span><br><span class="line"></span><br><span class="line">x, y = add_sub(<span class="number">10</span>, <span class="number">20</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(y)</span><br></pre></td></tr></table></figure>
+
+<pre><code>30
+-10
+</code></pre>
+<h2 id="함수의-호출-과정-알아보기"><a href="#함수의-호출-과정-알아보기" class="headerlink" title="함수의 호출 과정 알아보기"></a>함수의 호출 과정 알아보기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">mul</span>(<span class="params">a, b</span>):</span><br><span class="line">  c = a * b</span><br><span class="line">  <span class="keyword">return</span> c</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">a, b</span>):</span><br><span class="line">  c = a + b</span><br><span class="line">  <span class="built_in">print</span>(c)</span><br><span class="line">  d = mul(a, b)</span><br><span class="line">  <span class="built_in">print</span>(d)</span><br><span class="line"></span><br><span class="line">x = <span class="number">10</span></span><br><span class="line">y = <span class="number">20</span></span><br><span class="line">add(x, y)</span><br></pre></td></tr></table></figure>
+
+<pre><code>30
+200
+</code></pre>
+<h2 id="연습문제-몫과-나머지를-구하는-함수-만들기"><a href="#연습문제-몫과-나머지를-구하는-함수-만들기" class="headerlink" title="연습문제: 몫과 나머지를 구하는 함수 만들기"></a>연습문제: 몫과 나머지를 구하는 함수 만들기</h2><ul>
+<li>소스 코드를 완성하여 x를 y로 나누었을 때의 몫과 나머지가 출력되게 만드시오<ul>
+<li><p>x &#x3D; 10</p>
+</li>
+<li><p>y &#x3D; 3</p>
+</li>
+<li><p>quotient, remainder &#x3D; get_quotient_remainder(x, y)</p>
+</li>
+<li><p>print(‘몫: {0}, 나머지: {1}’.format(quotient, remainder))</p>
+</li>
+<li><p>실행결과</p>
+</li>
+<li><p>몫: 3, 나머지: 1</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_quoteint_remainder</span>(<span class="params">x, y</span>):</span><br><span class="line">  <span class="keyword">return</span> a // b, a % b</span><br></pre></td></tr></table></figure>
+
+<h1 id="함수에서-위치-인수와-키워드-인수-사용하기"><a href="#함수에서-위치-인수와-키워드-인수-사용하기" class="headerlink" title="함수에서 위치 인수와 키워드 인수 사용하기"></a>함수에서 위치 인수와 키워드 인수 사용하기</h1><h2 id="위치-인수를-사용하는-함수-만들고-호출하기"><a href="#위치-인수를-사용하는-함수-만들고-호출하기" class="headerlink" title="위치 인수를 사용하는 함수 만들고 호출하기"></a>위치 인수를 사용하는 함수 만들고 호출하기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_numbers</span>(<span class="params">a, b, c</span>):</span><br><span class="line">  <span class="built_in">print</span>(a)</span><br><span class="line">  <span class="built_in">print</span>(b)</span><br><span class="line">  <span class="built_in">print</span>(c)</span><br><span class="line"></span><br><span class="line">print_numbers(<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>10
+20
+30
+</code></pre>
+<h2 id="언패킹-사용하기"><a href="#언패킹-사용하기" class="headerlink" title="언패킹 사용하기"></a>언패킹 사용하기</h2><ul>
+<li>함수(*리스트)</li>
+<li>함수(*튜플)</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = [<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>]</span><br><span class="line">print_numbers(*x) <span class="comment"># 튜플 언패킹</span></span><br><span class="line"></span><br><span class="line">print_numbers(*[<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>])</span><br></pre></td></tr></table></figure>
+
+<pre><code>10
+20
+30
+10
+20
+30
+</code></pre>
+<h2 id="가변-인수-함수-만들기"><a href="#가변-인수-함수-만들기" class="headerlink" title="가변 인수 함수 만들기"></a>가변 인수 함수 만들기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_numbers</span>(<span class="params">*args</span>):</span><br><span class="line">  <span class="keyword">for</span> arg <span class="keyword">in</span> args:</span><br><span class="line">    <span class="built_in">print</span>(arg)</span><br><span class="line">    <span class="comment"># arg -&gt; arguments</span></span><br><span class="line"></span><br><span class="line">print_numbers(<span class="number">10</span>)</span><br><span class="line">print_numbers(<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>)</span><br><span class="line"></span><br><span class="line">x = [<span class="number">10</span>]</span><br><span class="line">print_numbers(*x)</span><br><span class="line"></span><br><span class="line">y = [<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>]</span><br><span class="line">print_numbers(*y)</span><br></pre></td></tr></table></figure>
+
+<pre><code>10
+10
+20
+30
+40
+10
+10
+20
+30
+40
+</code></pre>
+<h2 id="고정-인수와-가변-인수-함께-사용하기"><a href="#고정-인수와-가변-인수-함께-사용하기" class="headerlink" title="고정 인수와 가변 인수 함께 사용하기"></a>고정 인수와 가변 인수 함께 사용하기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_numbers</span>(<span class="params">a, *args</span>):</span><br><span class="line">  <span class="built_in">print</span>(a)</span><br><span class="line">  <span class="built_in">print</span>(args)</span><br><span class="line"></span><br><span class="line">print_numbers(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">print_numbers(<span class="number">1</span>, <span class="number">10</span>, <span class="number">20</span>)</span><br><span class="line"></span><br><span class="line">print_numbers(*[<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>])</span><br></pre></td></tr></table></figure>
+
+<pre><code>1
+()
+1
+(10, 20)
+10
+(20, 30)
+</code></pre>
+<h2 id="키워드-인수-사용하기"><a href="#키워드-인수-사용하기" class="headerlink" title="키워드 인수 사용하기"></a>키워드 인수 사용하기</h2><ul>
+<li>함수(키워드 &#x3D; 값)</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">personal_info</span>(<span class="params">name, age, address</span>):</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&#x27;이름 :&#x27;</span>, name)</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&#x27;나이 :&#x27;</span>, age)</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&#x27;주소 :&#x27;</span>, address)</span><br><span class="line"></span><br><span class="line">personal_info(name = <span class="string">&#x27;홍길동&#x27;</span>, age = <span class="number">30</span>, address = <span class="string">&#x27;서울시 용산구 이촌동&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>이름 : 홍길동
+나이 : 30
+주소 : 서울시 용산구 이촌동
+</code></pre>
+<h2 id="키워드-인수와-딕셔너리-언패킹-사용하기"><a href="#키워드-인수와-딕셔너리-언패킹-사용하기" class="headerlink" title="키워드 인수와 딕셔너리 언패킹 사용하기"></a>키워드 인수와 딕셔너리 언패킹 사용하기</h2><ul>
+<li>함수(**딕셔너리)</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">personal_info</span>(<span class="params">name, age, address</span>):</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&#x27;이름 :&#x27;</span>, name)</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&#x27;나이 :&#x27;</span>, age)</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&#x27;주소 :&#x27;</span>, address)</span><br><span class="line"></span><br><span class="line">x = &#123;<span class="string">&#x27;name&#x27;</span> : <span class="string">&#x27;홍길동&#x27;</span>, <span class="string">&#x27;age&#x27;</span> : <span class="number">30</span>, <span class="string">&#x27;address&#x27;</span> : <span class="string">&#x27;서울시 용산구 이촌동&#x27;</span>&#125;</span><br><span class="line">personal_info(**x)</span><br></pre></td></tr></table></figure>
+
+<pre><code>이름 : 홍길동
+나이 : 30
+주소 : 서울시 용산구 이촌동
+</code></pre>
+<h2 id="여기까지-코딩도장-30-3"><a href="#여기까지-코딩도장-30-3" class="headerlink" title="여기까지 코딩도장 30.3"></a>여기까지 코딩도장 30.3</h2><h2 id="나머지-마무리-하기"><a href="#나머지-마무리-하기" class="headerlink" title="나머지 마무리 하기"></a>나머지 마무리 하기</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kimanuul.github.io/2022/06/28/day0628_2/" data-id="cl56h2ez00000ywvoaj5e4tgy" data-title="Python 기초함수" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-day0627" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/06/27/day0627/" class="article-date">
@@ -2048,6 +2197,10 @@ mango
           </li>
         
           <li>
+            <a href="/2022/06/28/day0628_2/">Python 기초함수</a>
+          </li>
+        
+          <li>
             <a href="/2022/06/27/day0627/">Python 기초문법</a>
           </li>
         
@@ -2057,10 +2210,6 @@ mango
         
           <li>
             <a href="/2022/06/22/day0622_/">22JUN2022_ ggplot2</a>
-          </li>
-        
-          <li>
-            <a href="/2022/06/21/day0621/">21JUN2022_ Data Preprocessing</a>
           </li>
         
       </ul>
